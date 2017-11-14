@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">MaterialDesign</string>
+    
+    <string name="titular">Material Design</string>
+
+    <string name="titular2">Definicion</string>
+    
+    <string name="contenido">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent semper ultricies ipsum, sit amet malesuada felis finibus vel. In tempor risus vel finibus gravida. In hendrerit, nisl quis laoreet consequat, sapien metus consectetur orci, vitae scelerisque risus augue eget nisl. Pellentesque dictum felis vitae purus molestie gravida
+    </string>
 </resources>
