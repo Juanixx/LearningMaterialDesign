@@ -4,7 +4,15 @@
     <style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar">
         <!-- Customize your theme here. -->
 
-        <item name="android:textColor">#F2474747</item>
+        <item name="android:textColor">@android:color/holo_blue_light</item>
+
+        <item name="android:navigationBarColor">#CDDC39</item>
+
+        <item name="android:colorPrimary">#CDDC39</item>
+        <item name="android:colorPrimaryDark">#AFB42B</item>
+
+        <item name="android:textColorPrimary">#ff0000</item>
+
     </style>
 
 </resources>
