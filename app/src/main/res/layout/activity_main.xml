@@ -7,54 +7,52 @@
     android:orientation="vertical"
     tools:context="juanix.materialdesign.MainActivity">
 
+    <
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:elevation="100dp">
 
         <TextView
+            android:id="@+id/titular"
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:text="@string/titular"
-            android:textSize="45sp"
             android:layout_alignParentEnd="true"
+            android:background="#ff03a9f4"
             android:gravity="center_vertical|right"
             android:padding="20dp"
-            android:background="#ff03a9f4"
+            android:text="@string/titular"
             android:textColor="#ffffff"
-            android:id="@+id/titular"
-            />
+            android:textSize="45sp" />
 
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/capa2"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:id="@+id/capa2"
-        android:gravity="center"
         android:background="#FFEB3B"
         android:elevation="5dp"
-        >
+        android:gravity="center">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/titular2"
             android:textSize="18dp"
-            android:textStyle="bold"
-            />
+            android:textStyle="bold" />
 
 
     </RelativeLayout>
 
     <TextView
+        android:id="@+id/contenido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/contenido"
-        android:id="@+id/contenido"
-        android:padding="20dp"
         android:linksClickable="true"
-        android:textSize="20sp"
-        />
+        android:padding="20dp"
+        android:text="@string/contenido"
+        android:textSize="20sp" />
 
 </LinearLayout>
