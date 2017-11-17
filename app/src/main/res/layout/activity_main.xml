@@ -15,43 +15,81 @@
     android:background="#FF1FC5AB"
     >
 
-    <android.support.v7.widget.CardView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        app:cardBackgroundColor="#ffffff"
-        app:cardCornerRadius="15dp"
-        android:elevation="10dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        android:id="@+id/view"
         >
 
-        <LinearLayout
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:layout_height="200dp"
+            app:cardBackgroundColor="#ffffff"
+            app:cardCornerRadius="15dp"
+            android:elevation="10dp"
+            android:id="@+id/cardView"
+            >
 
-            <ImageView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="135dp"
-                android:src="@drawable/paisaje1"
-                android:scaleType="fitXY"
-                android:layout_gravity="center"
-                />
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Tarde de paseo"
-                android:gravity="center"
-                android:paddingTop="30dp"
-                android:textSize="28dp"
-                />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:src="@drawable/paisaje1"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center"
+                    />
 
-        </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tarde de paseo"
+                    android:gravity="center"
+                    android:paddingTop="30dp"
+                    android:textSize="28dp"
+                    />
 
-    </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
 
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        >
+
+        <ImageButton
+            android:id="@+id/btnAdd"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ovalo"
+            android:onClick="MostrarPantalla"
+            android:src="@android:drawable/ic_input_add" />
+        <Space
+            android:layout_width="200dp"
+            android:layout_height="10dp" />
+
+        <ImageButton
+            android:id="@+id/btnLess"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ovaloless"
+            android:onClick="OcultarPantalla"
+
+            android:src="@android:drawable/ic_delete" />
+    </LinearLayout>
 
 
 </LinearLayout>
